@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+}
+.main {
+    height: 100%;
+    background-image: url("./assets/images/game-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.action-button {
+    width: 500px;
+}
+.sandbox {
+    display: none;
+    position: relative;
+    height: 100%;
+    margin: 40px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+h5, p {
+    margin: 0;
+}
+canvas {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    background-color: rgba(221, 221, 221,0.8);
+}
+strong {
+    text-transform: uppercase;
+}
+.modal {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal__content {
+    margin: auto;
+    width: 310px;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    background-color: rgba(24, 188, 156, 0.9);
+    color: #F4F4F4;
+    text-align: center;
+    transform: translateY(calc(85vh / 2 - 100%));
+}
+.modal__header {
+    font-size: 28px;
+    line-height: 30px;
+}
+.modal__text {
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 30px;
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 24px;
+}
+.modal__btns-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    padding: 8px 0;
+}
+.modal__btn {
+    flex: 1;
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 30px;
+    padding: 4px;
+}
+.modal__btn:hover {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
